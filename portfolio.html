@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebStudio — Портфоліо</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-portfolio">
+
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <symbol id="i-mail" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></symbol>
+        <symbol id="i-phone" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></symbol>
+        <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></symbol>
+        <symbol id="i-twitter" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></symbol>
+        <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+        <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+        <symbol id="i-send" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></symbol>
+    </svg>
+
+    <header class="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">Web<span>Studio</span></a>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Студія</a></li>
+                    <li><a href="portfolio.html" class="nav-link is-current">Портфоліо</a></li>
+                    <li><a href="#contacts" class="nav-link">Контакти</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-contacts">
+                <a href="mailto:info@devstudio.com" class="contact-link">
+                    <svg class="icon"><use href="#i-mail"/></svg>info@devstudio.com
+                </a>
+                <a href="tel:+380961111111" class="contact-link">
+                    <svg class="icon"><use href="#i-phone"/></svg>+38 096 111 11 11
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="portfolio">
+        <div class="container">
+
+            <input class="filter-input" type="radio" name="filter" id="f-all" checked>
+            <input class="filter-input" type="radio" name="filter" id="f-web">
+            <input class="filter-input" type="radio" name="filter" id="f-apps">
+            <input class="filter-input" type="radio" name="filter" id="f-design">
+            <input class="filter-input" type="radio" name="filter" id="f-marketing">
+
+            <div class="filter-bar">
+                <label for="f-all" class="filter-btn">Усі</label>
+                <label for="f-web" class="filter-btn">Веб-сайти</label>
+                <label for="f-apps" class="filter-btn">Додатки</label>
+                <label for="f-design" class="filter-btn">Дизайн</label>
+                <label for="f-marketing" class="filter-btn">Маркетинг</label>
+            </div>
+
+            <ul class="work-grid">
+                <li class="work" data-cat="web">
+                    <div class="work-image"><img src="https://loremflickr.com/740/532/laptop,website?lock=21" alt="Технокряк"></div>
+                    <div class="work-body">
+                        <h3 class="work-title">Технокряк</h3>
+                        <p class="work-cat">Веб-сайт</p>
+                    </div>
+                </li>
+                <li class="work" data-cat="design">
+                    <div class="work-image"><img src="https://loremflickr.com/740/532/basketball,poster?lock=22" alt="Постер New Orlean vs Golden Star"></div>
+                    <div class="work-body">
+                        <h3 class="work-title">Постер New Orlean vs Golden Star</h3>
+                        <p class="work-cat">Дизайн</p>
+                    </div>
+                </li>
+                <li class="work" data-cat="apps">
+                    <div class="work-image"><img src="https://loremflickr.com/740/532/seafood,restaurant?lock=23" alt="Ресторан Seafood"></div>
+                    <div class="work-body">
+                        <h3 class="work-title">Ресторан Seafood</h3>
+                        <p class="work-cat">Додаток</p>
+                    </div>
+                </li>
+                <li class="work" data-cat="marketing">
+                    <div class="work-image"><img src="https://loremflickr.com/740/532/headphones?lock=24" alt="Проєкт Prime"></div>
+                    <div class="work-body">
+                        <h3 class="work-title">Проєкт Prime</h3>
+                        <p class="work-cat">Маркетинг</p>
+                    </div>
+                </li>
+                <li class="work" data-cat="apps">
+                    <div class="work-image"><img src="https://loremflickr.com/740/532/box,packaging?lock=25" alt="Проєкт Boxes"></div>
+                    <div class="work-body">
+                        <h3 class="work-title">Проєкт Boxes</h3>
+                        <p class="work-cat">Додаток</p>
+                    </div>
+                </li>
+                <li class="work" data-cat="web">
+                    <div class="work-image"><img src="https://loremflickr.com/740/532/monitor,computer?lock=26" alt="Inspiration has no Borders"></div>
+                    <div class="work-body">
+                        <h3 class="work-title">Inspiration has no Borders</h3>
+                        <p class="work-cat">Веб-сайт</p>
+                    </div>
+                </li>
+                <li class="work" data-cat="design">
+                    <div class="work-image"><img src="https://loremflickr.com/740/532/magazine,print?lock=27" alt="Видання Limited Edition"></div>
+                    <div class="work-body">
+                        <h3 class="work-title">Видання Limited Edition</h3>
+                        <p class="work-cat">Дизайн</p>
+                    </div>
+                </li>
+                <li class="work" data-cat="marketing">
+                    <div class="work-image"><img src="https://loremflickr.com/740/532/label,tag?lock=28" alt="Проєкт LAB"></div>
+                    <div class="work-body">
+                        <h3 class="work-title">Проєкт LAB</h3>
+                        <p class="work-cat">Маркетинг</p>
+                    </div>
+                </li>
+                <li class="work" data-cat="apps">
+                    <div class="work-image"><img src="https://loremflickr.com/740/532/laptop,business?lock=29" alt="Growing Business"></div>
+                    <div class="work-body">
+                        <h3 class="work-title">Growing Business</h3>
+                        <p class="work-cat">Додаток</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <footer class="footer" id="contacts">
+        <div class="container footer-inner">
+            <div class="footer-col footer-about">
+                <a href="index.html" class="logo logo-light">Web<span>Studio</span></a>
+                <address class="footer-address">
+                    <p>м. Київ, пр-т Лесі Українки, 26</p>
+                    <p><a href="mailto:info@devstudio.com">info@devstudio.com</a></p>
+                    <p><a href="tel:+380961111111">+38 096 111 11 11</a></p>
+                </address>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">Приєднуйтесь</h4>
+                <ul class="socials socials-dark">
+                    <li><a href="#"><svg class="icon"><use href="#i-instagram"/></svg></a></li>
+                    <li><a href="#"><svg class="icon"><use href="#i-twitter"/></svg></a></li>
+                    <li><a href="#"><svg class="icon"><use href="#i-facebook"/></svg></a></li>
+                    <li><a href="#"><svg class="icon"><use href="#i-linkedin"/></svg></a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">Підпишіться на розсилку</h4>
+                <form class="subscribe" action="#" method="post">
+                    <input type="email" name="email" class="subscribe-input" placeholder="E-mail" required>
+                    <button type="submit" class="btn btn-small">
+                        Підписатися <svg class="icon"><use href="#i-send"/></svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
